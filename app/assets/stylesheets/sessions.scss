@@ -1,0 +1,66 @@
+// Place all the styles related to the sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.hero{
+    display: flex;
+    justify-content: flex-start;
+    background-repeat: no-repeat;
+    background: url('https://sintesis.com.mx/puebla/wp-content/uploads/2020/05/escuela-activa.jpg');
+    background-blend-mode: multiply;
+    background-color: #666666;
+    background-size: cover;
+    background-position: center;
+    height: 937px;
+    width: 1920px;
+    margin:0;
+    padding-top: 10px;
+}
+
+.userPicture{
+    height: 100px;
+    width: 100px;
+}
+
+.bodyLg{
+    
+    border-radius: 10px;
+    padding-right: 10px;
+    text-align: center;
+    display: flexbox;
+    background-color: #FFFFFF;
+    margin: 100px 20px 0 100px;
+    height: 700px;
+    padding: 0 150px;
+}
+
+.inputLg{
+
+    outline-style: none;
+    border: 0;
+    color: #bdbdbd;
+    border-radius: 10px;
+    padding:20px 40px;
+    margin:20px 0;
+    box-shadow: 12px 10px 20px -10px;
+}
+
+.buttonLg{
+    background-color: #F47171;
+    color: white;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: #ffffff;
+    padding:20px 60px;
+    margin:20px 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.freeLg a {
+    color: #F47171;
+    text-decoration: none;
+    font-weight: bold;
+}

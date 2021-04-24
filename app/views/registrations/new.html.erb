@@ -1,0 +1,12 @@
+<div class="form-container">
+    <%= form_tag signup_path, method: :post, class: "form" do %>
+        <%= image_tag asset_path('logo.svg'), class: "form-logo" %>   
+        <p class="title">Regístrate</p>
+        <%= text_field_tag :name, "", placeholder: "Nombre de organización" %>
+        <%= email_field_tag :email, "", placeholder: "Email" %>
+        <%= password_field_tag :password, "", placeholder: "Contraseña" %>
+        <%= password_field_tag :password_confirmation, "", placeholder: "Confirmar contraseña" %>
+        <%= submit_tag "Crear cuenta" %>
+        <%= link_to "¿Ya tienes cuenta?", login_path, class: "account-notice" %>
+    <% end %>
+</div>

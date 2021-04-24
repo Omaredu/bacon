@@ -1,0 +1,60 @@
+.home-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-content {
+    min-height: 0;
+    width: 70%;
+    display: flex;
+}
+
+.home-content > .home-feed {
+    flex: 1;
+    overflow-y: scroll;
+    padding: 1em 2em;
+}
+
+.home-content > .home-messages {
+    flex: .5;
+    overflow: hidden;
+}
+
+.home-title {
+    font-size: 1.5em;
+}
+
+.post > textarea {
+    width: 100%;
+    margin: 1em 0 0 0;
+    border: none;
+    outline: none;
+    resize: vertical;
+    min-height: 3em;
+    margin-bottom: 4em;
+
+   &:focus {
+       outline: none;
+   } 
+}
+
+.post > input[type=submit] {
+    cursor: pointer;
+    float: right;
+    margin-top: -3em;
+    padding: 1em;
+    outline: none;
+    border-radius: 5px;
+    color: #fb3640;
+    border: solid 2px #fb3640;
+    background-color: rgba(251, 54, 64, 0.15);
+    transition: all .2s;
+    font-weight: 500;
+
+    &:hover {
+        box-shadow: 0 0 0 2px rgba(255, 57, 67, 0.35);
+    }
+}

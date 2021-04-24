@@ -1,0 +1,47 @@
+.profile-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.profile-container > .profile-info {
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+    align-items: center;
+    flex: 0.6;
+    min-height: 0;
+    overflow-y: scroll;
+}
+
+.profile-container > .profile-posts {
+    padding: 2em;
+    flex: 1;
+    min-height: 0;
+    overflow-y: scroll;
+}
+
+.profile-info > .profile-avatar {
+    object-fit: cover;
+    height: 12em;
+    width: 12em;
+    border-radius: 50%;
+    border: solid 1.2em rgba(251, 54, 64, 0.5);
+}
+
+.profile-info > .profile-name {
+    font-weight: 500;
+    font-size: 2em;
+    width: 10em;
+    text-align: center;
+}
+
+.profile-info > .profile-role {
+    color: #fb3640;
+    line-height: 0;
+}
+
+.profile-info > .profile-bio {
+    color: #3b3b3b;
+    font-size: .9em;
+}

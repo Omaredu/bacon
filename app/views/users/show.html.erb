@@ -1,0 +1,22 @@
+<div class="profile-container">
+    <div class="profile-info">
+        <img src="https://organicthemes.com/demo/profile/files/2018/05/profile-pic.jpg" class="profile-avatar">
+        <p class="profile-bio"><%= @user.email %></p>
+        <p class="profile-name"><%= @user.name || "Sin nombre aún..." %></p>
+        <p class="profile-role"><%= @user.title || "Sin asignar..." %></p>
+        <p class="profile-bio"><%=  @user.bio || "Esta persona aún no ha personalizado su biografía..." %></p>
+    </div>
+    <div class="profile-posts">
+        <p class="home-title">Publicaciones</p>
+        <div class="post">
+    <div class="profile-info">
+        <img class="profile-picture" src="https://expertphotography.com/wp-content/uploads/2020/08/social-media-profile-photos-9.jpg">
+        <div class="profile-info-text">
+            <p class="profile-info-name"><%= "Anónimo" %></p>
+            <p class="profile-info-title"><%= "Sin asignar" %></p>
+        </div>
+    </div>
+    <p><%= "El mensaje del día es..." %></p>
+</div>
+    </div>
+</div>

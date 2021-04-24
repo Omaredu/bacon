@@ -1,0 +1,30 @@
+<div class="evebar">
+    <%= image_tag asset_path('logo.svg'), class: "eve-logo" %>
+    <!--<input type="text" class="headerInput" placeholder="Busca algo...">-->
+    <img onClick="setShown()" class="profile-picture" src="https://expertphotography.com/wp-content/uploads/2020/08/social-media-profile-photos-9.jpg">
+</div>
+
+<div id="menbar" class="eve-menu">
+    <%= link_to "Mi perfil", user_path(Current.user) %>
+    <% if Current.user.admin %>
+        <%= link_to "Administrar organización", admin_path %>
+    <% end %>
+    <%= button_to "Cerrar sesión", logout_path, method: :delete %>
+</div>
+<section class="calendario">
+    <header class="headerCal">
+        </div>
+    </header>
+        <h1>Calendario</h1>
+    <div class="calendario">
+        <p>
+            <br>
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FMonterrey&amp;src=bnE1bG5xODJrMHVrM3RtbDVybmF0ZmI4bDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c2g0bHEyczY0cXF2bzVlbmRjM2U3YzdrcmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZXMubWV4aWNhbiNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23B39DDB&amp;color=%234285F4&amp;color=%230B8043&amp;showPrint=1&amp;title=." style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </p>
+        <p>
+            ¿Te gustaría agregar un nuevo evento al calendario? <br>
+            Pulse aquí → 
+            <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MHJrajVya2xqYTMzcThhZ3Bza2d0YWRidXUgY2FybG9zYWxnMjAwMUBt&amp;tmsrc=carlosalg2001%40gmail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_es.gif"></a>
+        </p>
+    </div>
+</section>

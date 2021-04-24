@@ -1,0 +1,153 @@
+// Place all the styles related to the messages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+/* Chat containers */
+
+/* Mensajitos con love <3 */
+.messages-body {
+  background-color: white;
+  margin: 5px 22rem 5px 22rem;
+  height: 34rem;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-box {
+  background: white;
+  border-style: solid;
+  border-color: #F47171;
+  border-width: 2px;
+  margin: 0 22rem 0 22rem;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 61.2rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  filter: drop-shadow(0 4px 4px #C2C2C2);
+}
+
+/*#B8B5FC - clarito*/
+/*background: rgba(184, 181, 252, 0.5); - clarito*/
+/*#7868E6 - fuerte*/
+  
+
+.message-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 92%;
+  margin-left: 20px;
+}
+
+
+/*MyMessages*/
+.my-square {
+  float: right;
+}
+
+.square-mine {
+  background-color: #F47171;
+  color: white;
+  width: 26rem;
+  border-radius: 20px 20px 5px 20px;
+  float: right;
+  margin-top: 25px;
+}
+
+.square-mine p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 17px;
+}
+
+/*YOURMESSAGES*/
+.square {
+  background-color: #DF9292;
+  color: white;
+  width: 26rem;
+  border-radius: 20px 20px 20px 5px;
+  margin-top: 25px;
+}
+
+.square p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 17px;
+}
+
+/*ScrollBar*/
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #BDBCBC; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #808080; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7868E6; 
+}
+  
+
+.friend-name {
+  font-size: 40px;
+  margin-left: 1rem;
+  padding-top: 2rem;
+  font-weight: bold;
+}
+
+ion-icon {
+  color: #F47171;
+  transform: rotate(45deg);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+  &:hover{
+    color: red;
+  }
+}
+
+/*icon logo*/
+.iconLogo {
+  height: 3em;
+  margin-left: 15px;
+}
+
+
+/*Imagen*/
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 6px solid #F47171;
+  margin-left: 20rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+

@@ -1,0 +1,74 @@
+.form {
+    width: 17em;
+    padding: 2em 5em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+   
+    margin-left: 5%;
+}
+
+.form > input[type=email], 
+.form > input[type=password], 
+.form > input[type=text] {
+    width: 100%;
+    padding: 1.5em;
+    border: solid 2px #ececec;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    //box-shadow: 10px 10px 10px -10px;
+    &:focus {
+        border-color: #fb3640;
+    }
+}
+
+.form input[type=submit] {
+    width: 115%;
+    cursor: pointer;
+    padding: 1.5em;
+    outline: none;
+    border: solid 2px #fb3640;
+    background-color: rgba(251, 54, 64, 0.15);
+    border-radius: 5px;
+    color: #fb3640;
+    transition: all .2s;
+    font-weight: 500;
+
+    &:hover {
+        box-shadow: 0 0 0 2px rgba(255, 57, 67, 0.35);
+    }
+}
+
+.form .account-notice {
+    color: #fb3640;
+    padding: 1.5em;
+}
+
+.form > .title {
+    font-size: 1.5em;
+    font-weight: 500;
+    align-self: flex-start;
+}
+
+.form > .form-logo {
+    height: 3em;
+    align-self: center;
+    margin: 1em 0em 1em 1em;
+}
+
+.form-container {
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: #2A343A;
+}

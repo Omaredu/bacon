@@ -1,0 +1,38 @@
+.post {
+    border: solid 2px #ececec;
+    border-radius: 5px;
+    padding: 1.5em;
+    margin-bottom: 1em;
+
+    &:hover {
+        border-color: #fb3640;
+    }
+}
+
+.post > .profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.post > .profile-info > .profile-picture {
+    object-fit: cover;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: solid 5px rgba(251, 54, 64, 0.5);
+}
+
+.profile-info-name {
+    font-weight: 500;
+    font-size: .9em;
+    line-height: 0;
+}
+
+.profile-info-title {
+    font-size: .8em;
+    color: #b3b3b3;
+}
+
+.profile-info-text {
+    margin-left: 1em;
+}

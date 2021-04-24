@@ -1,0 +1,35 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.flash {
+    padding: 1.5em;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: white;
+    border: solid 2px #ececec;
+    align-items: center;
+    display: flex;
+    margin-top: 1em;
+    max-width: 20em;
+}
+
+.flash.notice {
+    border-color: #0061a8;
+    color: white;
+    background-color: #2978b5;
+}
+
+.flash.alert {
+    border-color: #c70039;
+    color: white;
+    background-color: #ef4f4f;
+}
+
+.flash-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+}

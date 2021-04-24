@@ -1,0 +1,54 @@
+<div class="home-container">
+    <%= render 'navbar' %>
+    <div class="home-content">
+        <div class="home-messages">
+            <p class="home-title">Mensajes</p>
+            <%= form_tag posts_path, class: "post" do %>
+                <div class="profile-info">
+                    <img class="profile-picture" src="https://expertphotography.com/wp-content/uploads/2020/08/social-media-profile-photos-9.jpg">
+                    <div class="profile-info-text">
+                        <p class="profile-info-name">Juana De La Garza</p>
+                        <p class="profile-info-title">CEO</p>
+                    </div>
+                </div>
+                <%= link_to "¿Ver Mensajes?", messages_path, class: "account-notice" %>
+            <% end %>
+            <%= form_tag posts_path, class: "post" do %>
+                <div class="profile-info">
+                    <img class="profile-picture" src="https://expertphotography.com/wp-content/uploads/2020/08/social-media-profile-photos-9.jpg">
+                    <div class="profile-info-text">
+                        <p class="profile-info-name">María Jiménez</p>
+                        <p class="profile-info-title">Gerente</p>
+                    </div>
+                </div>
+                <%= link_to "¿Ver Mensajes?", messages_path, class: "account-notice" %>
+            <% end %>
+        </div>
+        <div class="home-feed">
+            <%= form_tag posts_path, method: :post, class: "post" do %>
+                <div class="profile-info">
+                    <img class="profile-picture" src="https://expertphotography.com/wp-content/uploads/2020/08/social-media-profile-photos-9.jpg">
+                    <div class="profile-info-text">
+                        <p class="profile-info-name"><%= Current.user.name || "Anónimo" %></p>
+                        <p class="profile-info-title"><%= Current.user.title || "Sin asignar..." %></p>
+                    </div>
+                </div>
+                <%= text_area_tag :body, "", placeholder: "Escribe una nueva publicación..." %>
+                <%= submit_tag "Crear Post" %>
+            <% end %>
+            <p class="home-title">Actividad</p>
+            <% @posts.each do |post| %>
+                <div class="post">
+    <div class="profile-info">
+        <img class="profile-picture" src="https://expertphotography.com/wp-content/uploads/2020/08/social-media-profile-photos-9.jpg">
+        <div class="profile-info-text">
+            <p class="profile-info-name"><%= post.user.name %></p>
+            <p class="profile-info-title"><%= post.user.title %></p>
+        </div>
+    </div>
+    <p><%= post.body %></p>
+</div>
+            <% end %>
+        </div>
+    </div>
+</div>

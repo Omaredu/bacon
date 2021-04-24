@@ -1,0 +1,82 @@
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<body>
+    <%= render 'navbar',
+            name: 'Juana De La Garza'
+            %>
+    <div class="messages-body">
+        <%= render 'message', 
+            message: "Hola, ¿cómo estas?",
+            who_square: "my-square",
+            square_whose: "square-mine"
+            %>
+        <%= render 'message', 
+            message: "Bien, ¿y usted?",
+            who_square: "square",
+            square_whose: ""
+            %>
+        <%= render 'message', 
+            message: "Excelentemente bien, ¿cómo estuvo el trabajo?",
+            who_square: "my-square",
+            square_whose: "square-mine"
+            %>
+        <%= render 'message', 
+            message: "Estuvo díficil",
+            who_square: "square",
+            square_whose: ""
+            %>
+        <%= render 'message', 
+            message: "Al final si se pudo lograr",
+            who_square: "square",
+            square_whose: ""
+            %>
+        <%= render 'message', 
+            message: "Pero Marcelo ya no está en el equipo",
+            who_square: "square",
+            square_whose: ""
+            %>
+        <%= render 'message', 
+            message: "Además esta padre que ahora puedo ver todos los avisos más rápido y puedo ponerme en contacto con mi jefe y su jefe con más eficacia.",
+            who_square: "square",
+            square_whose: ""
+            %>
+        <%= render 'message', 
+            message: "Me gusta mucho utilizar esta plataforma",
+            who_square: "square",
+            square_whose: ""
+            %>
+        <%= render 'message', 
+            message: "Muy bien",
+            who_square: "my-square",
+            square_whose: "square-mine"
+            %>
+        <%= render 'message', 
+            message: "Si la recomiendo",
+            who_square: "square",
+            square_whose: ""
+            %>
+        <%= render 'message', 
+            message: "Yo también",
+            who_square: "my-square",
+            square_whose: "square-mine"
+            %>
+        <%= render 'message', 
+            message: "Si gracias por decirme",
+            who_square: "square",
+            square_whose: ""
+            %>
+        <%= render 'message', 
+            message: "Nos vemos en la siguiente junta",
+            who_square: "square",
+            square_whose: ""
+            %>
+        <%= render 'message', 
+            message: "Si el Martes",
+            who_square: "my-square",
+            square_whose: "square-mine"
+            %>
+    </div>
+    <div class="message-box">
+        <input type="text" name="" class="message-txt" placeholder="Escribe algo..."/>
+        <ion-icon name="paper-plane"></ion-icon>
+    </div>
+</body>

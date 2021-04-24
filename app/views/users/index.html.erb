@@ -1,0 +1,12 @@
+<div>
+    <p>Administrar</p>
+    <% Current.user.organization.users.each do |user| %>
+        <p><%= user.email %></p>
+    <% end %>
+    <%= form_tag users_path, method: :post, class: "form" do %>
+        <%= email_field_tag :email, "", placeholder: "Email" %>
+        <%= password_field_tag :password, "", placeholder: "Contraseña" %>
+        <%= password_field_tag :password_confirmation, "", placeholder: "Confirmar contraseña" %>
+        <%= submit_tag "Añadir cuenta" %>
+    <% end %>
+</div>
